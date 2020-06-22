@@ -5,7 +5,7 @@ export const Style = styled.p`
   font-size: 12px;
   font-weight: 300;
   color: #AFFAEC;
-  margin: 10px 5px 0;
+  margin: 8px 5px 0;
 `;
 
 export default Style 

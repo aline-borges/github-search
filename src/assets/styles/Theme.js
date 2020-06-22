@@ -5,8 +5,9 @@ export const theme = {
   colors: {
     darkPurple: "#6426B2",
     lightPurple: "#8752CC",
-    darkTurquoise: "#158D78",
-    lightTurquoise: "#3CC9B0",
+    darkTurquoise: "#32cfb1",
+    turquoise: "#57D9C1",
+    lightTurquoise: "#A8EFE2",
     darkGrey: "#3F3F46",
     grey: "#A1A0B2",
     lightGrey: "#E7E4FF",

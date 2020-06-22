@@ -1,10 +1,10 @@
 import React from 'react';
-import Container from '../components/container/Container';
-import Logo from '../components/logo/Logo';
+import Container from '../components/containers/container/Container';
+import Logo from '../components/image/logo/Logo';
 import Title from '../components/texts/title/Title';
 import Subtitle from '../components/texts/subtitle/Subtitle';
 import Input from '../components/form/input/Input';
-import Button from '../components/button/Search/Button';
+import Button from '../components/button/search/Button';
 
 export const Home = () => {
   return(

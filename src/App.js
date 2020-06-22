@@ -1,11 +1,11 @@
 import React from 'react';
 import Global from './assets/styles/Global';
-import Profile from './pages/Profile';
+import Home from './pages/Home';
 
 function App() {
   return (
     <>
-      <Profile />
+      <Home />
       <Global />
     </>
   );

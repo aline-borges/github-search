@@ -1,13 +1,13 @@
 import React from 'react';
 import Style from '../style';
 import Icon from '../../image/iconButton/Icon';
-import search from '../../../assets/icons/search.svg';
+import plus from '../../../assets/icons/plus.svg';
 
 export const Button = (props) => {
   return(
-    <Style backgroundColor="#8752CC" fontColor="#E7E4FF" hoverColor="#6426B2">
+    <Style backgroundColor="#57D9C1" fontColor="#3F3F46" hoverColor="#32cfb1">
       {props.children}
-      <Icon src={search} alt='plus-icon' />
+      <Icon src={plus} alt='plus-icon' />
     </Style>
   );
 }
