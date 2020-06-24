@@ -9,7 +9,8 @@ import List from '../components/repositoryList/list/List';
 import Item from '../components/repositoryList/item/itemRepository/Item';
 import Arrow from '../components/decoration/arrow/Arrow';
 import arrow from '../assets/icons/arrow-repo.svg';
-import Button from '../components/button/repository/Button';
+import Button from '../components/button/Button';
+import plus from '../assets/icons/plus.svg';
 
 export const Repository = () => {
   return(
@@ -28,7 +29,7 @@ export const Repository = () => {
         <Item text='Fourth-Repository' />
         <Item text='Fifth-Repository' />
       </List>
-      <Button>See More</Button>
+      <Button color='#3F3F46' backgroundColor='#57D9C1' hoverColor='#32cfb1' src={plus} alt='plus-icon' iconWidth='16px'>See More</Button>
     </Container>
   );
 }

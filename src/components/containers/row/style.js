@@ -4,7 +4,7 @@ export const Style = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-start;
 `;
 
 export default Style 

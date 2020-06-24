@@ -2,11 +2,11 @@ import React from 'react';
 import Style from './style';
 import Icon from '../image/iconButton/Icon';
 
-export const Button = (props) => {
+const Button = (props) => {
   return(
-    <Style>
+    <Style color={props.fontColor} backgroundColor={props.backgroundColor} hoverColor={props.hoverColor}>
       {props.children}
-      <Icon src={props.src} alt={props.alt} />
+      <Icon src={props.src} alt={props.alt} size={props.iconWidth} />
     </Style>
   );
 }
