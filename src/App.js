@@ -1,11 +1,11 @@
 import React from 'react';
 import Global from './assets/styles/Global';
-import Star from './pages/Star';
+import Followers from './pages/Followers';
 
 function App() {
   return (
     <>
-      <Star />
+      <Followers />
       <Global />
     </>
   );
