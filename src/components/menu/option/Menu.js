@@ -8,43 +8,60 @@ import code from '../../../assets/icons/code.svg';
 import star from '../../../assets/icons/star.svg';
 import following from '../../../assets/icons/following.svg';
 import followers from '../../../assets/icons/followers.svg';
+import Paragraph from '../../texts/paragraph/Paragraph';
 
 export const Menu = () => {
   return(
   <Grid>
     <Style>
       <Column>
-        Repositories
+        <Paragraph>
+          Repositories
+        </Paragraph>
         <Row>
           <Icon src={code} />
-          13
+          <Paragraph>
+            13
+          </Paragraph>
         </Row>
       </Column>
     </Style>
     <Style>
       <Column>
-        Stars
+        <Paragraph>
+          Stars
+        </Paragraph>
         <Row>
           <Icon src={star} />
-          5
+          <Paragraph>
+            5
+          </Paragraph>
         </Row>
       </Column>
     </Style>
     <Style>
       <Column>
-        Following
+        <Paragraph>
+          Following
+        </Paragraph>
         <Row>
           <Icon src={following} />
-          1
+          <Paragraph>
+            1
+          </Paragraph>
         </Row>
       </Column>
     </Style>
     <Style>
       <Column>
-        Followers
+        <Paragraph>
+          Followers
+        </Paragraph>
         <Row>
         <Icon src={followers} />
-        1
+        <Paragraph>
+          1
+        </Paragraph>
         </Row>
       </Column>
     </Style>

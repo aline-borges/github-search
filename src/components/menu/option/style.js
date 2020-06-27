@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const Style = styled.button`
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font: 14px 'Montserrat', sans-serif;
   border: 1px solid;
   border-image-source: linear-gradient(45deg, #8752CC, #5452CC, #6C79CC, #709ED1, #89E5D5, #52A0CC);
   border-image-slice: 1;
@@ -18,6 +17,12 @@ export const Style = styled.button`
     border-image-source: linear-gradient(45deg, #8752CC, #5452CC, #6C79CC, #709ED1, #89E5D5, #52A0CC);
     border-image-slice: 1;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 600px){
+    min-width: 160px;
+    min-height: 160px;
+    font-size: 16px;
   }
 `;
 

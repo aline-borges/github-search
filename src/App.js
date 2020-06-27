@@ -1,11 +1,11 @@
 import React from 'react';
 import Global from './assets/styles/Global';
-import Followers from './pages/Followers';
+import Home from './pages/Home';
 
 function App() {
   return (
     <>
-      <Followers />
+      <Home />
       <Global />
     </>
   );

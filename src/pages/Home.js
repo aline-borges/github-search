@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from '../components/containers/container/Container';
+import Container from '../components/containers/main/Container';
 import Logo from '../components/image/logo/Logo';
 import Title from '../components/texts/title/Title';
 import Subtitle from '../components/texts/subtitle/Subtitle';

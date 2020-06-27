@@ -1,5 +1,5 @@
 import React from 'react';
-import Style from './style';
+import { ColumnLeft } from '../style';
 import Photo from '../../../components/image/photo/Photo';
 import Username from '../../../components/texts/username/Username';
 import NameList from '../../../components/texts/nameList/NameList';
@@ -12,7 +12,7 @@ const FollowList = () => {
   return(
     <Row>
       <Photo src={'https://avatars1.githubusercontent.com/u/30665365?v=4'} />
-      <Style>
+      <ColumnLeft>
         <Row>
           <NameList>Aline Borges</NameList>
           <Username>@aline-borges</Username>
@@ -22,7 +22,7 @@ const FollowList = () => {
           <Location>Rio de Janeiro, Brazil</Location>
           <Company>FGV</Company>
         </Row>
-      </Style>
+      </ColumnLeft>
     </Row>
   );
 }

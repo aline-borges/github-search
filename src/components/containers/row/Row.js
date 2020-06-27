@@ -1,11 +1,11 @@
 import React from 'react';
-import Style from './style';
+import { RowStart } from '../style';
 
-export const Row = (props) => {
+const Row = (props) => {
   return(
-    <Style>
+    <RowStart>
       {props.children}
-    </Style>
+    </RowStart>
   );
 }
 

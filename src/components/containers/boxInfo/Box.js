@@ -1,11 +1,11 @@
 import React from 'react';
-import Style from './style';
+import { ColumnStart } from '../style';
 
-export const Box = (props) => {
+const Box = (props) => {
   return(
-    <Style>
+    <ColumnStart>
       {props.children}
-    </Style>
+    </ColumnStart>
   );
 }
 

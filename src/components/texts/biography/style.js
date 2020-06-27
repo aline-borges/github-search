@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
 export const Style = styled.p`
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  font-weight: 300;
+  font: 300 14px 'Montserrat', sans-serif;
   color: #BE93F5;
-  margin: 10px 0 5px;
+  margin: 10px;
+
+  @media screen and (max-width: 600px){
+    font-size: 12px;
+  }
 `;
 
 export default Style 

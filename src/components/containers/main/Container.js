@@ -1,11 +1,11 @@
 import React from 'react'
-import Style from './style';
+import Main from '../style';
 
-export const Container = (props) => {
+const Container = (props) => {
   return(
-    <Style>
+    <Main>
       {props.children}
-    </Style>
+    </Main>
   );
 }
 

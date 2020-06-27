@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from '../components/containers/container/Container';
+import Container from '../components/containers/main/Container';
 import Box from '../components/containers/boxInfo/Box';
 import Row from '../components/containers/row/Row';
 import Photo from '../components/image/photo/Photo';
@@ -16,7 +16,7 @@ import searchColor from '../assets/icons/search-color.svg';
 export const Profile = () => {
   return(
     <Container>
-       <Button border='2px solid #57D9C1' backgroundColor='transparent' fontColor='#57D9C1' backgroundHover='#57D9C1' colorHover='#E7E4FF' src={searchColor} alt='search-icon' iconWidth='11px'>Back to Search</Button>
+       <Button border='2px solid #32cfb1' backgroundColor='transparent' fontColor='#32cfb1' backgroundHover='#32cfb1' colorHover='#E7E4FF' src={searchColor} alt='search-icon' iconWidth='11px'>Back to Search</Button>
       <Photo src={'https://avatars1.githubusercontent.com/u/30665365?v=4'} />
       <Username>@aline-borges</Username>
       <Name>Aline Borges</Name>

@@ -1,11 +1,11 @@
 import React from 'react';
-import Style from './style';
+import { GridCenter } from '../style';
 
-export const Grid = (props) => {
+const Grid = (props) => {
   return(
-    <Style>
+    <GridCenter>
       {props.children}
-    </Style>
+    </GridCenter>
   );
 }
 

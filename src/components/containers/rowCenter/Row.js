@@ -1,11 +1,11 @@
 import React from 'react';
-import Style from './style';
+import { RowCenter } from '../style';
 
 const RowOptions = (props) =>{
   return(
-    <Style>
+    <RowCenter>
       {props.children}
-    </Style>
+    </RowCenter>
   );
 }
 

@@ -12,12 +12,16 @@ export const Style = styled.input`
   color: #89E5D5;
   text-align: center;
   white-space: nowrap; 
-  min-width: 350px; 
+  min-width: 340px; 
   overflow: hidden;
   text-overflow: ellipsis;
 
   &::placeholder {
     color: #89E5D555;
+  }
+
+  @media screen and (max-width: 500px){
+    min-width: 320px;
   }
 `;
 

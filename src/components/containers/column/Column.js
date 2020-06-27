@@ -1,11 +1,11 @@
 import React from 'react';
-import Style from './style';
+import { Col } from '../style';
 
-export const Column = (props) => {
+const Column = (props) => {
   return(
-    <Style>
+    <Col>
       {props.children}
-    </Style>
+    </Col>
   );
 }
 
