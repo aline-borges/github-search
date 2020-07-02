@@ -15,6 +15,31 @@ import searchColor from '../assets/icons/search-color.svg';
 import profileColor from '../assets/icons/profile-color.svg';
 
 export default class Repository extends Component {
+  state = {
+    repository: [],
+  };
+
+  componentDidMount() {
+    this.loadRepositoryList();
+  }
+
+  loadRepositoryList = async () => {
+    const response = await api.get(`/aline-borges/repos`);
+    let array =[];
+
+    for(let i=0; i<5; i++) {
+      array.push(
+        <Item src={response.data[i].html_url} 
+              text={response.data[i].name} 
+        />
+      )
+    }
+
+    this.setState({
+      repository: array,
+    })
+  } 
+
   render() {
     return(
       <Container>
@@ -29,7 +54,7 @@ export default class Repository extends Component {
         <Title text='Repositories' />
         <Line /> 
         <List>
-          <Item />
+          {this.state.repository}
         </List>
         <Button color='#3F3F46' backgroundColor='#57D9C1' hoverColor='#32cfb1' src={plus} alt='plus-icon' iconWidth='16px'>See More</Button>
       </Container>

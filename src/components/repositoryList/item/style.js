@@ -5,7 +5,7 @@ export const Style = styled.li`
   letter-spacing: 1px;
   cursor: pointer;
 
-  &:first-of-type {
+  &:hover {
     color: ${props => props.fontColor};
   }
 `;
