@@ -3,24 +3,18 @@ import { ThemeProvider } from 'styled-components';
 
 export const theme = {
   colors: {
-    darkPurple: "#6426B2",
-    lightPurple: "#8752CC",
-    darkTurquoise: "#32cfb1",
-    turquoise: "#57D9C1",
-    lightTurquoise: "#A8EFE2",
-    darkGrey: "#3F3F46",
-    grey: "#A1A0B2",
-    lightGrey: "#E7E4FF",
-    white: "#FFFFFF",
-    background: 'linear-gradient(45deg, #8752CC, #5452CC, #6C79CC, #709ED1, #89E5D5, #52A0CC)'
+    black: '#111111',
+    darkGrey: '#201F1F',
+    grey: '#232324',
+    purple: '#8752CC',
+    darkPurple: '#562694',
+    green: '#24927D',
+    darkGreen: '#146A5A',
+    white: '#F9F3F3'
   },
   fonts: [
-    "sans-serif", 
-    "Roboto", 
-    "Roboto Mono", 
+    "sans-serif",  
     "Open Sans",
-    "Montserrat",
-    "Franklin Gothic Book"
   ],
   fontSizes: {
     superSmall: "12px",

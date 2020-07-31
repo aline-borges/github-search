@@ -17,11 +17,14 @@ export const Global = createGlobalStyle`
     color: #ffffff;
   }
 
+  svg {
+    margin-left: 15px;
+  }
+
   body {
-    background: #3F3F46;
+    background: #232324;
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
-    text-align: center;
   }
 `;
 

@@ -1,21 +1,13 @@
 import React from 'react';
 import Global from './assets/styles/Global';
-import Home from './pages/Home';
-import Profile from './pages/Profile';
-import Repository from './pages/Repository';
-import Stars from './pages/Star';
-import Following from './pages/Following';
-import Followers from './pages/Followers';
+import Header from './components/molecules/header/Header';
+import Home from './templates/home/Home';
 
 function App() {
   return (
     <>
+      <Header />
       <Home />
-      <Profile />
-      <Repository />
-      <Stars />
-      <Following />
-      <Followers />
       <Global />
     </>
   );
