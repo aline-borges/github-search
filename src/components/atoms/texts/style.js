@@ -26,4 +26,15 @@ export const TextParagraph = styled.p`
   min-width: ${props => props.width};
 `;
 
+export const UserName = styled.h3`
+  font: 16px 'Open Sans', sans-serif;
+  color: #F9F3F3;
+`;
+
+export const FullName = styled(UserName)`
+  font-size: 36px;
+  font-weight: 500;
+  color: #8752CC;
+`;
+
 export default TextParagraph 

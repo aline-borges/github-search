@@ -10,6 +10,15 @@ export const MainImage = styled.img`
   margin: ${props => props.margin};
 `;
 
+export const Image = styled.img`
+  width: 140px;
+  border-radius: 100%;
+`;
+
+export const SmallIcon = styled.img`
+  width: ${props => props.width};
+`;
+
 export default MainImage 
 
 

@@ -17,8 +17,32 @@ export const Global = createGlobalStyle`
     color: #ffffff;
   }
 
-  svg {
+  button svg {
     margin-left: 15px;
+  }
+
+  #place,
+  #job,
+  #following,
+  #followers {
+    margin-top: 1px;
+  }
+
+  #repository,
+  #starPurple {
+    margin: 13px 4px 0 0;
+  }
+
+  #circle {
+    margin: 3px 8px 0 0;
+  }
+
+  #starGrey {
+    margin: 2px 5px 0 0;
+  }
+
+  #place {
+    margin-left: -3px;
   }
 
   body {
