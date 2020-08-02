@@ -8,6 +8,7 @@ import Container from '../../components/atoms/containers/Container';
 const Profile = () => {
   return(
     <>
+    <Container width='100vw' height='100vh' direction='column'>
       <Header />
       <Page>
         <Container direction='column'>
@@ -15,6 +16,7 @@ const Profile = () => {
           <Repository />
         </Container>
       </Page>
+    </Container>
     </>
   );
 }

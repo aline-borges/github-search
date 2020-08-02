@@ -6,8 +6,8 @@ import Profile from './templates/profile/Profile';
 function App() {
   return (
     <>
-      <Profile />
       <Home />
+      <Profile />
       <Global />
     </>
   );

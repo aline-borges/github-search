@@ -49,6 +49,7 @@ export const Global = createGlobalStyle`
     background: #232324;
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
+    overflow-x: hidden;
   }
 `;
 
