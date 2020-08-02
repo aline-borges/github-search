@@ -1,10 +1,9 @@
 import React from 'react';
 import Image from '../../atoms/images/Image';
-import HomeImage from '../../../assets/images/ImageHome.png';
 
-const Figure = () => {
+const Figure = (props) => {
   return(
-    <Image width='400px' src={HomeImage} alt='home'/>
+    <Image width={props.width} src={props.src} alt={props.alt} margin={props.margin} />
   );
 }
 

@@ -13,6 +13,7 @@ export const MainImage = styled.img`
 export const Image = styled.img`
   width: 140px;
   border-radius: 100%;
+  margin: ${props => props.margin};
 `;
 
 export const SmallIcon = styled.img`

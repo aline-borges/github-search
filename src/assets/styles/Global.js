@@ -8,6 +8,13 @@ export const Global = createGlobalStyle`
     padding: 0;
   }
 
+  body {
+    background: #232324;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+
   ul {
     list-style: none;
   }
@@ -45,11 +52,9 @@ export const Global = createGlobalStyle`
     margin-left: -3px;
   }
 
-  body {
-    background: #232324;
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
-    overflow-x: hidden;
+  #repoLogo,
+  #starLogo {
+    margin: auto auto 15px auto;
   }
 `;
 

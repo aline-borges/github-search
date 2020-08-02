@@ -8,11 +8,19 @@ export const SiteTitle = styled.h1`
   margin-right: 10px;
 `;
 
-export const SubTitle = styled.h1`
+export const SubTitle = styled.h2`
   font: 700 12px 'Open Sans', sans-serif;
   letter-spacing: 5px;
   color: #8752CC;
   text-transform: uppercase;
+`;
+
+export const PageTitleStyle = styled.h1`
+  font: 400 36px 'Open Sans', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: ${props => props.color};
 `;
 
 export const TextParagraph = styled.p`
