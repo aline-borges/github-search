@@ -53,7 +53,8 @@ export const Global = createGlobalStyle`
   }
 
   #repoLogo,
-  #starLogo {
+  #starLogo,
+  #followLogo {
     margin: auto auto 15px auto;
   }
 `;

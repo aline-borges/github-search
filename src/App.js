@@ -4,10 +4,12 @@ import Home from './templates/home/Home';
 import Profile from './templates/profile/Profile';
 import Repositories from './templates/repositories/Repositories';
 import Stars from './templates/stars/Stars';
+import Following from './templates/following/Following';
 
 function App() {
   return (
     <>
+      <Following />
       <Home />
       <Profile />
       <Repositories />

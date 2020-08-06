@@ -3,7 +3,7 @@ import { FullName } from './style';
 
 const Name = (props) => {
   return(
-    <FullName>
+    <FullName size={props.size} weight={props.weight} color={props.color} margin={props.margin}>
       {props.children}
     </FullName>
   );

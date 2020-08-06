@@ -11,7 +11,7 @@ export const MainImage = styled.img`
 `;
 
 export const Image = styled.img`
-  width: 140px;
+  min-width: ${props => props.width};
   border-radius: 100%;
   margin: ${props => props.margin};
 `;

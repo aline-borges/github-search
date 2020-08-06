@@ -8,10 +8,10 @@ import Paragraph from '../../atoms/texts/Paragraph';
 const Info = () => {
   return(
     <Container direction='row' justify='left' align='center'>
-      <ImageProfile src='https://avatars1.githubusercontent.com/u/30665365?v=4' alt='photoprofile' />
+      <ImageProfile src='https://avatars1.githubusercontent.com/u/30665365?v=4' alt='photoprofile' width='140px' />
       <Container direction='column' justify='center' margin='0 0 0 15px'>
-        <Username>@aline-borges</Username>
-        <Name>Aline Borges</Name>
+        <Username size='16px' weight='normal' color='#F9F3F3'>@aline-borges</Username>
+        <Name size='36px' weight='500' color='#8752CC'>Aline Borges</Name>
         <Container direction='row'>
           <Container direction='row'>
             <svg id='place' width="18" height="18" viewBox="0 0 23 23" fill="#8752CC" xmlns="http://www.w3.org/2000/svg">
