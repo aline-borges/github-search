@@ -10,7 +10,7 @@ export const Global = createGlobalStyle`
 
   body {
     background: #232324;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #ffffff;
     overflow-x: hidden;
   }
