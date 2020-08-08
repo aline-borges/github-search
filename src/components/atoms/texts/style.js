@@ -18,6 +18,7 @@ export const SubTitle = styled.h2`
 export const PageTitleStyle = styled.h1`
   font: 400 36px 'Montserrat', sans-serif;
   text-align: center;
+  margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: ${props => props.color};

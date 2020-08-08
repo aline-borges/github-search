@@ -6,14 +6,13 @@ import Username from '../../atoms/texts/Username';
 import Paragraph from '../../atoms/texts/Paragraph';
 import Button from '../../atoms/buttons/Button';
 
-
 const ListUser = () => {
   return(
     <Container direction='row'>
-      <ImageProfile  src='https://avatars1.githubusercontent.com/u/3043525?v=4' alt='photoprofile' width='70px' margin='10px 15px 0 0'/>
+      <ImageProfile  src='https://avatars1.githubusercontent.com/u/3043525?v=4' alt='photoprofile' width='80px' margin='15px 15px 0 0'/>
       <Container direction='column' margin='10px 0 0 0' justify='left' align='center'>
-        <Container direction='row' justify='right' align='flex-end' margin='2px 0 0 px'>
-          <Name size='24px' weight='500' color='#F9F3F3' margin='10px 10px 0 0'>Guilherme Oliveira</Name>
+        <Container direction='row' justify='right' align='flex-end' margin='12px 0 5px 0'>
+          <Name size='18px' weight='500' color='#F9F3F3' margin='10px 100px 0 0'>Guilherme Oliveira</Name>
           <Username size='12px' weight='normal' color='#F9F3F3' margin='0 15px 5px 0'>@guibfo</Username>
         </Container>
         <Container direction='row' margin='2px 85px 10px 0'>
