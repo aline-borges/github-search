@@ -61,6 +61,11 @@ export const Global = createGlobalStyle`
   #list {
     margin-top: 15px;
   }
+
+  #list-user #view-profile:hover {
+    background: #3E3C3C; 
+    color: #F9F3F3;
+  }
 `;
 
 export default Global

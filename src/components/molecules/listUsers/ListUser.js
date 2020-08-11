@@ -8,7 +8,7 @@ import Button from '../../atoms/buttons/Button';
 
 const ListUser = () => {
   return(
-    <Container direction='row' margin='5px 0' padding="12px 8px 2px" radius='10px' bgHover="#3E3C3C">
+    <Container id="list-user" direction='row' margin='5px 0' padding="12px 10px 2px" radius='10px' bgHover="#3E3C3C">
       <ImageProfile  src='https://avatars1.githubusercontent.com/u/3043525?v=4' alt='photoprofile' width='70px' margin='auto 10px 12px auto'/>
       <Container direction='column' margin='10px 0 0 0' justify='left' align='flex-start'>
         <Container direction='row' justify='left' align='flex-end'>

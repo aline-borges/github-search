@@ -14,12 +14,6 @@ export const Flex = styled.div`
 
   &:hover {
     background: ${props => props.bgHover};
-
-    #view-profile {
-    &:hover {
-      background: #3E3C3C; 
-      color: #F9F3F3;
-    }
   }
 `;
 
