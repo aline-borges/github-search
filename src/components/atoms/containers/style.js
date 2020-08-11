@@ -11,6 +11,16 @@ export const Flex = styled.div`
   margin: ${props => props.margin};
   padding: ${props => props.padding};
   border-radius: ${props => props.radius};
+
+  &:hover {
+    background: ${props => props.bgHover};
+
+    #view-profile {
+    &:hover {
+      background: #3E3C3C; 
+      color: #F9F3F3;
+    }
+  }
 `;
 
 export default Flex 

@@ -13,7 +13,7 @@ const Home = (props) => {
     <>
       <Container width='100vw' height='100vh' direction='column'>
         <Header />
-        <Page>
+        <Page margin="100px 0 0 0">
           <Figure width='400px' src={HomeImage} alt='home' />
           <Main>
             <Text />

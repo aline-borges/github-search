@@ -8,7 +8,7 @@ import Button from '../../atoms/buttons/Button';
 
 const ListUser = () => {
   return(
-    <Container direction='row' margin='15px 0'>
+    <Container direction='row' margin='5px 0' padding="12px 8px 2px" radius='10px' bgHover="#3E3C3C">
       <ImageProfile  src='https://avatars1.githubusercontent.com/u/3043525?v=4' alt='photoprofile' width='70px' margin='auto 10px 12px auto'/>
       <Container direction='column' margin='10px 0 0 0' justify='left' align='flex-start'>
         <Container direction='row' justify='left' align='flex-end'>
@@ -40,7 +40,7 @@ const ListUser = () => {
           </Container>
         </Container>
       </Container>
-      <Button margin='auto auto 15px 5px' padding='8px 16px' bgColor="#3E3C3C" color="#F9F3F3" size='10px' lineHeight='21px' bgHover='#F9F3F3' colorHover='#3E3C3C'>View Profile</Button>
+      <Button id="view-profile" margin='auto auto 28px 2px' padding='8px 16px' bgColor="#3E3C3C" color="#F9F3F3" size='10px' lineHeight='21px' bgHover='#F9F3F3' colorHover='#3E3C3C'>View Profile</Button>
     </Container>
   );
 }

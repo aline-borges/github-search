@@ -16,7 +16,7 @@ const Stars = () => {
     <>
       <Container width='100vw' height='100vh' direction='column'>
         <Header />
-        <Page>
+        <Page margin="100px 0 0 0">
           <Figure width='500px' src={StarImage} alt='home' margin='25px 0 0 0' />
           <Main>
             <Container id="list-repo" direction='column'>

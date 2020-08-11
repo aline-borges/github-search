@@ -57,6 +57,10 @@ export const Global = createGlobalStyle`
   #followLogo {
     margin: auto auto 15px auto;
   }
+
+  #list {
+    margin-top: 15px;
+  }
 `;
 
 export default Global
