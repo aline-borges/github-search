@@ -8,12 +8,12 @@ import Button from '../../atoms/buttons/Button';
 
 const ListUser = () => {
   return(
-    <Container direction='row'>
-      <ImageProfile  src='https://avatars1.githubusercontent.com/u/3043525?v=4' alt='photoprofile' width='150px' margin='15px 15px 0 0'/>
+    <Container direction='row' margin='15px 0'>
+      <ImageProfile  src='https://avatars1.githubusercontent.com/u/3043525?v=4' alt='photoprofile' width='70px' margin='auto 10px 12px auto'/>
       <Container direction='column' margin='10px 0 0 0' justify='left' align='flex-start'>
-        <Container direction='row' justify='left' align='flex-end' margin='12px 0 5px 0'>
-          <Name size='18px' weight='500' color='#F9F3F3' margin='10px 15px 0 0'>Guilherme Oliveira</Name>
-          <Username size='12px' weight='normal' color='#F9F3F3' margin='50px 2px 5px 0'>@guibfo</Username>
+        <Container direction='row' justify='left' align='flex-end'>
+          <Name size='18px' weight='500' color='#F9F3F3'>Guilherme Oliveira</Name>
+          <Username size='12px' weight='normal' color='#C4C2D9' margin="0 0 2px 10px">@guibfo</Username>
         </Container>
         <Container direction='row' margin='2px 120px 10px 0'>
           <Container direction='row'>
