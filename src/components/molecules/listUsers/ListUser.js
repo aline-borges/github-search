@@ -40,7 +40,7 @@ const ListUser = () => {
           </Container>
         </Container>
       </Container>
-      <Button id="viewProfile" margin='auto auto 28px 0' padding='8px 16px' bgColor="#3E3C3C" color="#F9F3F3" size='10px' lineHeight='21px' bgHover='#F9F3F3' colorHover='#3E3C3C'>View Profile</Button>
+      <Button id="viewProfile" margin='auto auto 28px 0' padding='4px 8px'  bgColor="#3E3C3C" color="#F9F3F3" size='8px' lineHeight='21px' bgHover='#F9F3F3' colorHover='#3E3C3C'>View Profile</Button>
     </Container>
   );
 }
