@@ -5,15 +5,17 @@ import Profile from './templates/profile/Profile';
 import Repositories from './templates/repositories/Repositories';
 import Stars from './templates/stars/Stars';
 import Following from './templates/following/Following';
+import Followers from './templates/followers/Followers';
 
 function App() {
   return (
     <>
-      <Following />
       <Home />
       <Profile />
       <Repositories />
       <Stars />
+      <Followers />
+      <Following />
       <Global />
     </>
   );

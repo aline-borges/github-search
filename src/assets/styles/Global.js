@@ -28,15 +28,11 @@ export const Global = createGlobalStyle`
     margin-left: 15px;
   }
 
-  #place,
-  #job,
-  #following,
-  #followers {
+  .smallIcon {
     margin-top: 1px;
   }
 
-  #repository,
-  #starPurple {
+  .repository {
     margin: 13px 4px 0 0;
   }
 
@@ -52,9 +48,7 @@ export const Global = createGlobalStyle`
     margin-left: -3px;
   }
 
-  #repoLogo,
-  #starLogo,
-  #followLogo {
+  .largeIcon {
     margin: auto auto 15px auto;
   }
 
@@ -62,10 +56,6 @@ export const Global = createGlobalStyle`
     margin-top: 15px;
   }
 
-  #list-user #view-profile:hover {
-    background: #3E3C3C; 
-    color: #F9F3F3;
-  }
 `;
 
 export default Global

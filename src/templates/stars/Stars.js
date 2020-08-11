@@ -20,7 +20,7 @@ const Stars = () => {
           <Figure width='500px' src={StarImage} alt='home' margin='25px 0 0 0' />
           <Main>
             <Container id="list-repo" direction='column'>
-            <svg id='starLogo' width="80" height="80" viewBox="0 0 22 23" fill="#8752CC" xmlns="http://www.w3.org/2000/svg">
+            <svg className='largeIcon' width="80" height="80" viewBox="0 0 22 23" fill="#8752CC" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.81981 0.783627L7.13459 6.60825L1.12675 7.5453C0.0493653 7.71247 -0.38241 9.13343 0.398897 9.9473L4.74543 14.4785L3.7174 20.8795C3.53235 22.0365 4.67141 22.9031 5.62543 22.362L11 19.3397L16.3746 22.362C17.3286 22.8987 18.4677 22.0365 18.2826 20.8795L17.2546 14.4785L21.6011 9.9473C22.3824 9.13343 21.9506 7.71247 20.8733 7.5453L14.8654 6.60825L12.1802 0.783627C11.6991 -0.2546 10.305 -0.267797 9.81981 0.783627Z" fill="#8752CC" />
               <defs>
               <linearGradient id="paint0_linear" x1="11" y1="0" x2="11" y2="22.527" gradientUnits="userSpaceOnUse">
