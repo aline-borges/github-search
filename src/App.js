@@ -14,8 +14,8 @@ function App() {
       <Profile />
       <Repositories />
       <Stars />
-      <Followers />
       <Following />
+      <Followers />
       <Global />
     </>
   );

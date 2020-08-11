@@ -7,7 +7,7 @@ import Header from '../../components/molecules/header/Header';
 import Page from '../../components/molecules/page/Page';
 import Figure from '../../components/molecules/figure/Figure';
 import Main from '../../components/molecules/main/Main';
-import FollowingImage from '../../assets/images/following.png'
+import FollowersImage from '../../assets/images/followers.png'
 import ListUser from '../../components/molecules/listUsers/ListUser';
 
 const Following = () => {
@@ -16,7 +16,7 @@ const Following = () => {
       <Container width='100vw' height='100vh' direction='column' margin="0 0 15px 0">
         <Header />
         <Page margin="25px 0 0 0">
-          <Figure width='500px' src={FollowingImage} alt='home' margin='25px 0 0 0' />
+          <Figure width='500px' src={FollowersImage} alt='home' margin='25px 0 0 0' />
           <Main>
             <Container id="list-repo" direction='column' margin="0 0 2px 0">
               <svg className='largeIcon' width="80" height="80" viewBox="0 0 23 20" fill="#F9F3F3" xmlns="http://www.w3.org/2000/svg">
@@ -27,8 +27,8 @@ const Following = () => {
                 </linearGradient>
                 </defs>
               </svg>
-              <PageTitle color='#F9F3F3'>Following</PageTitle>
-              <Line color='#24927D' />
+              <PageTitle color='#F9F3F3'>Followers</PageTitle>
+              <Line color='#8752CC' />
 
               <ul id="list">
                 <li><ListUser /></li>
@@ -36,7 +36,7 @@ const Following = () => {
                 <li><ListUser /></li>
               </ul>
               
-              <Button margin='10px auto 25px auto' bgColor="#24927D" color='#F9F3F3' lineHeight='21px' bgHover='#146A5A'>
+              <Button margin='10px auto 25px auto' bgColor="#8752CC" color='#F9F3F3' lineHeight='21px' bgHover='#562694'>
                 See More
                 <svg width="12" height="11" viewBox="0 0 12 11" fill="#F9F3F3" xmlns="http://www.w3.org/2000/svg">
                   <path d="M10.3622 4.58106H7.10558V1.47242C7.10558 1.09097 6.7815 0.781616 6.38188 0.781616H5.65817C5.25855 0.781616 4.93447 1.09097 4.93447 1.47242V4.58106H1.6778C1.27818 4.58106 0.954102 4.89041 0.954102 5.27187V5.96267C0.954102 6.34413 1.27818 6.65348 1.6778 6.65348H4.93447V9.76212C4.93447 10.1436 5.25855 10.4529 5.65817 10.4529H6.38188C6.7815 10.4529 7.10558 10.1436 7.10558 9.76212V6.65348H10.3622C10.7619 6.65348 11.0859 6.34413 11.0859 5.96267V5.27187C11.0859 4.89041 10.7619 4.58106 10.3622 4.58106Z" fill="#F9F3F3"/>
