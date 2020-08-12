@@ -22,7 +22,7 @@ const Info = () => {
                 </linearGradient>
                 </defs>
               </svg>
-            <Paragraph weight='500' size='14px' spacing='1px' margin='0 10px 0 1px'>Rio de Janeiro, Brazil</Paragraph>
+            <Paragraph weight='500' size='14px' spacing='1px' margin='0 15px 0 1px'>Rio de Janeiro, Brazil</Paragraph>
           </Container>
           <Container direction='row'>
             <svg id='job' width="15" height="15" viewBox="0 0 19 18" fill="#8752CC" xmlns="http://www.w3.org/2000/svg">
