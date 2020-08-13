@@ -9,7 +9,7 @@ import Header from '../../components/molecules/header/Header';
 import Page from '../../components/molecules/page/Page';
 import Figure from '../../components/molecules/figure/Figure';
 import Main from '../../components/molecules/main/Main';
-import RepositoryImage from '../../assets/images/Repository.png';
+import repository from '../../assets/images/repository.png';
 
 const Repositories = () => {
   return(
@@ -17,7 +17,7 @@ const Repositories = () => {
       <Container width='100vw' height='100vh' direction='column'>
         <Header />
         <Page margin="100px 0 0 0">
-          <Figure width='500px' src={RepositoryImage} alt='home' margin='25px 0 0 0' />
+          <Figure width='500px' src={repository} alt='home' margin='25px 0 0 0' />
           <Main>
             <Container id="list-repo" direction='column'>
               <svg className='largeIcon' width="80" height="80" viewBox="0 0 20 24" fill="#24927D" xmlns="http://www.w3.org/2000/svg">

@@ -7,7 +7,7 @@ import Header from '../../components/molecules/header/Header';
 import Page from '../../components/molecules/page/Page';
 import Figure from '../../components/molecules/figure/Figure';
 import Main from '../../components/molecules/main/Main';
-import FollowingImage from '../../assets/images/following.png'
+import following from '../../assets/images/following.png'
 import ListUser from '../../components/molecules/listUsers/ListUser';
 
 const Following = () => {
@@ -16,7 +16,7 @@ const Following = () => {
       <Container width='100vw' height='100vh' direction='column' margin="0 0 15px 0">
         <Header />
         <Page margin="25px 0 0 0">
-          <Figure width='500px' src={FollowingImage} alt='home' margin='25px 0 0 0' />
+          <Figure width='500px' src={following} alt='home' margin='25px 0 0 0' />
           <Main>
             <Container id="list-repo" direction='column' margin="0 0 2px 0">
               <svg className='largeIcon' width="80" height="80" viewBox="0 0 24 20" fill="#F9F3F3" xmlns="http://www.w3.org/2000/svg">

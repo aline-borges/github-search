@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../../atoms/containers/Container';
 import Paragraph from '../../atoms/texts/Paragraph';
 
-const Text = () => {
+const Information = () => {
   return(
     <Container direction='column' justify='left' margin='0 0 15px'>
       <Paragraph weight='900' size='24px'>Find a User</Paragraph>
@@ -12,4 +12,4 @@ const Text = () => {
   );
 }
 
-export default Text 
+export default Information 

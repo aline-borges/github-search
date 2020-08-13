@@ -1,11 +1,11 @@
 import React from 'react';
-import Page from '../../components/molecules/page/Page';
-import Figure from '../../components/molecules/figure/Figure';
-import Main from '../../components/molecules/main/Main';
+import Content from '../../components/containers/content/Content';
+import Figure from '../../components/containers/figure/Figure';
+import Main from '../../components/containers/main/Main';
 import Header from '../../components/molecules/header/Header';
 import Container from '../../components/atoms/containers/Container';
-import HomeImage from '../../assets/images/ImageHome.png';
-import Text from '../../components/molecules/text/Text';
+import home from '../../assets/images/home.png';
+import Information from '../../components/molecules/information/Information';
 import Form from '../../components/molecules/form/Form';
 
 const Home = (props) => {
@@ -13,13 +13,13 @@ const Home = (props) => {
     <>
       <Container width='100vw' height='100vh' direction='column'>
         <Header />
-        <Page margin="100px 0 0 0">
-          <Figure width='400px' src={HomeImage} alt='home' />
+        <Content margin="100px 0 0 0">
+          <Figure width='400px' src={home} alt='home' />
           <Main>
-            <Text />
+            <Information />
             <Form />
           </Main>
-        </Page>
+        </Content>
       </Container>
     </>
   );

@@ -9,7 +9,7 @@ import Header from '../../components/molecules/header/Header';
 import Page from '../../components/molecules/page/Page';
 import Figure from '../../components/molecules/figure/Figure';
 import Main from '../../components/molecules/main/Main';
-import StarImage from '../../assets/images/Stars.png';
+import stars from '../../assets/images/stars.png';
 
 const Stars = () => {
   return(
@@ -17,7 +17,7 @@ const Stars = () => {
       <Container width='100vw' height='100vh' direction='column'>
         <Header />
         <Page margin="100px 0 0 0">
-          <Figure width='500px' src={StarImage} alt='home' margin='25px 0 0 0' />
+          <Figure width='500px' src={stars} alt='home' margin='25px 0 0 0' />
           <Main>
             <Container id="list-repo" direction='column'>
             <svg className='largeIcon' width="80" height="80" viewBox="0 0 22 23" fill="#8752CC" xmlns="http://www.w3.org/2000/svg">
