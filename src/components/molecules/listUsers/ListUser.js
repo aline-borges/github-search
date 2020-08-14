@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '../../atoms/containers/container/Container';
-import ImageProfile from '../../atoms/images/ImageProfile';
+import Photo from '../../atoms/images/Photo';
 import Name from '../../atoms/texts/Name';
 import Username from '../../atoms/texts/Username';
 import Paragraph from '../../atoms/texts/Paragraph';
@@ -9,7 +9,7 @@ import Button from '../../atoms/buttons/button/Button';
 const ListUser = () => {
   return(
     <Container id="listUser" direction='row' margin='5px 0' padding="10px 10px 2px" radius='10px' bgHover="#3E3C3C">
-      <ImageProfile  src='https://avatars1.githubusercontent.com/u/3043525?v=4' alt='photoprofile' width='70px' margin='auto 10px 12px auto'/>
+      <Photo  src='https://avatars1.githubusercontent.com/u/3043525?v=4' alt='photoprofile' width='70px' margin='auto 10px 12px auto'/>
       <Container direction='column' margin='10px 0 0 0' justify='flex-start' align='flex-start'>
         <Container direction='row' justify='flex-start' align='flex-end'>
           <Name size='18px' weight='500' color='#F9F3F3'>Guilherme Oliveira</Name>

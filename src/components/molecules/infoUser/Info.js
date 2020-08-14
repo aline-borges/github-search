@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '../../atoms/containers/container/Container';
-import ImageProfile from '../../atoms/images/ImageProfile';
+import Photo from '../../atoms/images/Photo';
 import Username from '../../atoms/texts/Username';
 import Name from '../../atoms/texts/Name';
 import Paragraph from '../../atoms/texts/Paragraph';
@@ -8,7 +8,7 @@ import Paragraph from '../../atoms/texts/Paragraph';
 const Info = () => {
   return(
     <Container direction='row' justify='left' align='center'>
-      <ImageProfile src='https://avatars1.githubusercontent.com/u/30665365?v=4' alt='photoprofile' width='140px' />
+      <Photo src='https://avatars1.githubusercontent.com/u/30665365?v=4' alt='photoprofile' width='140px' />
       <Container direction='column' justify='center' margin='0 0 0 15px'>
         <Username size='16px' weight='normal' color='#F9F3F3'>@aline-borges</Username>
         <Name size='36px' weight='500' color='#8752CC'>Aline Borges</Name>
