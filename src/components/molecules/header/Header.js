@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from '../../atoms/containers/Container';
+import Container from '../../atoms/containers/container/Container';
 import Logo from '../../atoms/images/Logo';
 import AppName from '../appName/AppName';
 

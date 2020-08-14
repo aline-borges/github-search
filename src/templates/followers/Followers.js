@@ -1,12 +1,12 @@
 import React from 'react';
-import Container from '../../components/atoms/containers/Container';
+import Container from '../../components/atoms/containers/container/Container';
 import PageTitle from '../../components/atoms/texts/PageTitle';
 import Line from '../../components/atoms/decoration/Line';
-import Button from '../../components/atoms/buttons/Button';
+import Button from '../../components/atoms/buttons/button/Button';
 import Header from '../../components/molecules/header/Header';
-import Page from '../../components/molecules/page/Page';
+import Content from '../../components/atoms/containers/content/Content';
 import Figure from '../../components/molecules/figure/Figure';
-import Main from '../../components/molecules/main/Main';
+import Main from '../../components/atoms/containers/main/Main';
 import followers from '../../assets/images/followers.png'
 import ListUser from '../../components/molecules/listUsers/ListUser';
 
@@ -15,7 +15,7 @@ const Following = () => {
     <>
       <Container width='100vw' height='100vh' direction='column' margin="0 0 15px 0">
         <Header />
-        <Page margin="25px 0 0 0">
+        <Content margin="25px 0 0 0">
           <Figure width='500px' src={followers} alt='home' margin='25px 0 0 0' />
           <Main>
             <Container id="list-repo" direction='column' margin="0 0 2px 0">
@@ -44,7 +44,7 @@ const Following = () => {
               </Button>
             </Container>
           </Main>
-        </Page>
+        </Content>
       </Container>
     </>
   );

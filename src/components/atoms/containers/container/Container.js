@@ -1,5 +1,5 @@
 import React from 'react';
-import Flex from '../containers/style';
+import Flex from '../container/style';
 
 const Container = (props) => {
   return(

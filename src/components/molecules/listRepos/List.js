@@ -1,10 +1,10 @@
 import React from 'react';
-import Container from '../../atoms/containers/Container';
+import Container from '../../atoms/containers/container/Container';
 import PageTitle from '../../atoms/texts/PageTitle';
 import Line from '../../atoms/decoration/Line';
 import ListRepo from '../../atoms/lists/ListRepo';
 import Item from '../../atoms/lists/Item';
-import Button from '../../atoms/buttons/Button';
+import Button from '../../components/atoms/buttons/button/Button';
 
 const List = () => {
   return(

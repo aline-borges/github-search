@@ -1,10 +1,10 @@
 import React from 'react';
-import Container from '../../atoms/containers/Container';
+import Container from '../../atoms/containers/container/Container';
 import ImageProfile from '../../atoms/images/ImageProfile';
 import Name from '../../atoms/texts/Name';
 import Username from '../../atoms/texts/Username';
 import Paragraph from '../../atoms/texts/Paragraph';
-import Button from '../../atoms/buttons/Button';
+import Button from '../../atoms/buttons/button/Button';
 
 const ListUser = () => {
   return(

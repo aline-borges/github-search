@@ -1,14 +1,14 @@
 import React from 'react';
-import Container from '../../components/atoms/containers/Container';
+import Container from '../../components/atoms/containers/container/Container';
 import PageTitle from '../../components/atoms/texts/PageTitle';
 import Line from '../../components/atoms/decoration/Line';
 import ListRepo from '../../components/atoms/lists/ListRepo';
 import Item from '../../components/atoms/lists/Item';
-import Button from '../../components/atoms/buttons/Button';
+import Button from '../../components/atoms/buttons/button/Button';
 import Header from '../../components/molecules/header/Header';
-import Page from '../../components/molecules/page/Page';
+import Content from '../../components/atoms/containers/content/Content';
 import Figure from '../../components/molecules/figure/Figure';
-import Main from '../../components/molecules/main/Main';
+import Main from '../../components/atoms/containers/main/Main';
 import repository from '../../assets/images/repository.png';
 
 const Repositories = () => {
@@ -16,7 +16,7 @@ const Repositories = () => {
     <>
       <Container width='100vw' height='100vh' direction='column'>
         <Header />
-        <Page margin="100px 0 0 0">
+        <Content margin="100px 0 0 0">
           <Figure width='500px' src={repository} alt='home' margin='25px 0 0 0' />
           <Main>
             <Container id="list-repo" direction='column'>
@@ -45,7 +45,7 @@ const Repositories = () => {
               </Button>
             </Container>
           </Main>
-        </Page>
+        </Content>
       </Container>
     </>
   );

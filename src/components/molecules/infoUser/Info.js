@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from '../../atoms/containers/Container';
+import Container from '../../atoms/containers/container/Container';
 import ImageProfile from '../../atoms/images/ImageProfile';
 import Username from '../../atoms/texts/Username';
 import Name from '../../atoms/texts/Name';

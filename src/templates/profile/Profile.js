@@ -1,21 +1,21 @@
 import React from 'react';
 import Header from '../../components/molecules/header/Header';
-import Page from '../../components/molecules/page/Page';
+import Content from '../../components/atoms/containers/content/Content';
 import Info from '../../components/molecules/infoUser/Info';
 import Repository from '../../components/molecules/infoUser/Repository';
-import Container from '../../components/atoms/containers/Container';
+import Container from '../../components/atoms/containers/container/Container';
 
 const Profile = () => {
   return(
     <>
     <Container width='100vw' height='100vh' direction='column'>
       <Header />
-      <Page margin="100px 0 0 0">
+      <Content margin="100px 0 0 0">
         <Container direction='column'>
           <Info />
           <Repository />
         </Container>
-      </Page>
+      </Content>
     </Container>
     </>
   );

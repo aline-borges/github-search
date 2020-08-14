@@ -1,7 +1,7 @@
 import React from 'react';
-import Container from '../../atoms/containers/Container';
+import Container from '../../atoms/containers/container/Container';
 import Input from '../../atoms/inputs/Input';
-import Button from '../../atoms/buttons/Button';
+import Button from '../../atoms/buttons/button/Button';
 
 const Form = () => {
   return(

@@ -1,5 +1,5 @@
 import React from 'react';
-import Container from '../../atoms/containers/Container';
+import Container from '../../atoms/containers/container/Container';
 import Paragraph from '../../atoms/texts/Paragraph';
 
 const Information = () => {
