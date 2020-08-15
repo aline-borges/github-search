@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '../../atoms/containers/container/Container';
 import Logo from '../../atoms/images/Logo';
-import AppName from '../appName/AppName';
+import AppName from '../../molecules/appName/AppName';
 
 const Header = () => {
   return(

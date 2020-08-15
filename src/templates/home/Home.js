@@ -2,7 +2,7 @@ import React from 'react';
 import Content from '../../components/atoms/containers/content/Content';
 import Figure from '../../components/molecules/figure/Figure';
 import Main from '../../components/atoms/containers/main/Main';
-import Header from '../../components/molecules/header/Header';
+import Header from '../../components/organisms/header/Header';
 import Container from '../../components/atoms/containers/container/Container';
 import home from '../../assets/images/home.png';
 import Information from '../../components/molecules/information/Information';

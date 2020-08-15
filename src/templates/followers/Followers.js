@@ -3,7 +3,7 @@ import Container from '../../components/atoms/containers/container/Container';
 import PageTitle from '../../components/atoms/texts/PageTitle';
 import Line from '../../components/atoms/decoration/Line';
 import Button from '../../components/atoms/buttons/button/Button';
-import Header from '../../components/molecules/header/Header';
+import Header from '../../components/organisms/header/Header';
 import Content from '../../components/atoms/containers/content/Content';
 import Figure from '../../components/molecules/figure/Figure';
 import Main from '../../components/atoms/containers/main/Main';

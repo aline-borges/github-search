@@ -11,6 +11,7 @@ export const Flex = styled.div`
   margin: ${props => props.margin};
   padding: ${props => props.padding};
   border-radius: ${props => props.radius};
+  position: ${props => props.position};
 
   &:hover {
     background: ${props => props.bgHover};

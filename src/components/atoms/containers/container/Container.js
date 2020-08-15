@@ -12,6 +12,7 @@ const Container = (props) => {
           margin={props.margin}
           padding={props.padding}
           radius={props.radius}
+          position={props.position}
           bgHover={props.bgHover}>
       {props.children}
     </Flex>

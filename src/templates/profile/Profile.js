@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../components/molecules/header/Header';
+import Header from '../../components/organisms/header/Header';
 import Content from '../../components/atoms/containers/content/Content';
 import Info from '../../components/molecules/infoUser/Info';
 import Repository from '../../components/molecules/infoUser/Repository';
