@@ -1,11 +1,11 @@
 import React from 'react';
 import Global from './assets/styles/Global';
-import Home from './templates/home/Home';
-import Profile from './templates/profile/Profile';
-import Repositories from './templates/repositories/Repositories';
-import Stars from './templates/stars/Stars';
-import Following from './templates/following/Following';
-import Followers from './templates/followers/Followers';
+import Home from './pages/home/Home';
+import Profile from './pages/profile/Profile';
+import Repositories from './pages/repositories/Repositories';
+import Stars from './pages/stars/Stars';
+import Following from './pages/following/Following';
+import Followers from './pages/followers/Followers';
 
 function App() {
   return (
