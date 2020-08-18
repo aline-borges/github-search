@@ -16,7 +16,7 @@ const Home = (props) => {
         <Content margin="120px 0 0 0">
           <Figure width='400px' src={home} alt='home' />
           <Main>
-            <Information />
+            <Information title='Find a User' subtitle='Type a username' text='and find a profile' />
             <Form />
           </Main>
         </Content>
@@ -26,4 +26,3 @@ const Home = (props) => {
 }
 
 export default Home 
-
