@@ -7,6 +7,7 @@ import Stars from './pages/stars/Stars';
 import Following from './pages/following/Following';
 import Followers from './pages/followers/Followers';
 import NotFound from './pages/status/notFound/NotFound';
+import ServerError from './pages/status/serverError/ServerError';
 
 const Routes = () => {
   return(
@@ -17,7 +18,8 @@ const Routes = () => {
       <Route path="/profile/stars" component={Stars} />
       <Route path="/profile/following" component={Following} />
       <Route path="/profile/followers" component={Followers} />
-      <Route component={NotFound} />
+      <Route path="/404" component={NotFound} />
+      <Route path="/500" component={ServerError} />
     </Switch>
   );
 }
