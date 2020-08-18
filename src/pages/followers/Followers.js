@@ -10,7 +10,7 @@ import Main from '../../components/atoms/containers/main/Main';
 import followers from '../../assets/images/followers.png'
 import ListUser from '../../components/molecules/listUsers/ListUser';
 
-const Following = () => {
+const Followers = () => {
   return(
     <>
       <Container width='100vw' height='100vh' direction='column' margin="0 0 15px 0">
@@ -50,4 +50,4 @@ const Following = () => {
   );
 }
 
-export default Following 
+export default Followers

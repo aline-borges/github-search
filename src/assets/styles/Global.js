@@ -12,7 +12,7 @@ export const Global = createGlobalStyle`
     background: #232324;
     font-family: 'Open Sans', sans-serif;
     color: #ffffff;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   ul {
