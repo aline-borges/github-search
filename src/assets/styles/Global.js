@@ -48,12 +48,21 @@ export const Global = createGlobalStyle`
     margin-left: -3px;
   }
 
+  #homeIcon {
+    padding-top: 5px;
+  }
+
   .largeIcon {
     margin: auto auto 15px auto;
   }
 
   #list {
     margin-top: 15px;
+  }
+
+  span {
+    color: #7D4DBB;
+    font-weight: 800;
   }
 
 `;

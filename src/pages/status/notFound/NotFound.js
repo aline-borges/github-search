@@ -4,19 +4,23 @@ import Content from '../../../components/atoms/containers/content/Content';
 import Main from '../../../components/atoms/containers/main/Main';
 import Header from '../../../components/organisms/header/Header';
 import Figure from '../../../components/molecules/figure/Figure';
-import Information from '../../../components/molecules/information/Information';
 import notFound from '../../../assets/images/404.png';
+import Paragraph from '../../../components/atoms/texts/Paragraph';
+import { Link } from 'react-router-dom';
+
 
 const NotFound = () => {
   return(
     <Container width='100vw' height='100vh' direction='column'>
       <Header />
-      <Content margin="140px 0 0 0" justify='center' align='center'>
+      <Content margin="120px 0 0 0" justify='center' align='center'>
         <Main>
-          <Information title='Ooops! Page not found.' subtitle='Look like you’re lost in space.' text='If you want to start over, go to the homepage.' />
+          <Paragraph weight="800" size="32px" spacing="0.03em">Ooops! Page not found.</Paragraph>
+          <Figure width='800px' src={notFound} alt='notFound' />
+          <Paragraph weight="500" size="24px" spacing="0.03em">Look like you’re lost in space.</Paragraph>
+          <Paragraph weight="500" size="24px" spacing="0.03em">If you want to start over, <Link to="/"><span>go to the homepage.</span></Link></Paragraph>
         </Main>
-        <Figure width='' src={notFound} alt='notFound' />
-        </Content>
+      </Content>
     </Container>
   );
 }
