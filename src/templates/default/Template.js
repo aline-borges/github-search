@@ -9,7 +9,7 @@ const Template = (props) => {
   return(
     <Container width='100vw' height='100vh' direction='column'>
     <Header />
-    <Content margin="120px 0 0 0">
+    <Content margin="140px 0 0 0">
       <Figure width={props.figureWidth} src={props.figureSrc} alt={props.figureAlt} />
       <Main>
         {props.children}
