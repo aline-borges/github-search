@@ -5,13 +5,14 @@ import Username from '../../atoms/texts/Username';
 import Name from '../../atoms/texts/Name';
 import Paragraph from '../../atoms/texts/Paragraph';
 
-const Info = () => {
+const Info = ({ data }) => {
+  const { login, name, avatar_url, location, company, followers, following } = data;
   return(
     <Container direction='row' justify='left' align='center'>
-      <Photo src='https://avatars1.githubusercontent.com/u/30665365?v=4' alt='photoprofile' width='140px' />
+      <Photo src={avatar_url} alt='photoprofile' width='140px' />
       <Container direction='column' justify='center' margin='0 0 0 15px'>
-        <Username size='16px' weight='normal' color='#F9F3F3'>@aline-borges</Username>
-        <Name size='36px' weight='500' color='#8752CC'>Aline Borges</Name>
+        <Username size='16px' weight='normal' color='#F9F3F3'>@{login}</Username>
+        <Name size='36px' weight='500' color='#8752CC'>{name}</Name>
         <Container direction='row'>
           <Container direction='row'>
             <svg id='place' width="18" height="18" viewBox="0 0 23 23" fill="#8752CC" xmlns="http://www.w3.org/2000/svg">
@@ -22,7 +23,7 @@ const Info = () => {
                 </linearGradient>
                 </defs>
               </svg>
-            <Paragraph weight='500' size='14px' spacing='1px' margin='0 15px 0 1px'>Rio de Janeiro, Brazil</Paragraph>
+            <Paragraph weight='500' size='14px' spacing='1px' margin='0 15px 0 1px'>{location}</Paragraph>
           </Container>
           <Container direction='row'>
             <svg id='job' width="15" height="15" viewBox="0 0 19 18" fill="#8752CC" xmlns="http://www.w3.org/2000/svg">
@@ -33,7 +34,7 @@ const Info = () => {
                 </linearGradient>
                 </defs>
               </svg>
-            <Paragraph weight='500' size='14px' spacing='1px' margin='0 10px 0 6px'>FGV</Paragraph>
+            <Paragraph weight='500' size='14px' spacing='1px' margin='0 10px 0 6px'>{company}</Paragraph>
           </Container>
         </Container>
 
@@ -47,7 +48,7 @@ const Info = () => {
                 </linearGradient>
                 </defs>
               </svg>
-            <Paragraph weight='500' size='14px' spacing='1px' margin='0 10px 0 5px'>1</Paragraph>
+            <Paragraph weight='500' size='14px' spacing='1px' margin='0 10px 0 5px'>{following}</Paragraph>
           </Container>
 
           <Container direction='row'>
@@ -59,7 +60,7 @@ const Info = () => {
               </linearGradient>
               </defs>
             </svg>
-            <Paragraph weight='500' size='14px' spacing='1px' margin='0 10px 0 5px'>1</Paragraph>
+            <Paragraph weight='500' size='14px' spacing='1px' margin='0 10px 0 5px'>{followers}</Paragraph>
           </Container>
         </Container>
       </Container>

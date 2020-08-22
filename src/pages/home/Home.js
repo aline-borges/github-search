@@ -6,12 +6,10 @@ import Form from '../../components/molecules/form/Form';
 
 const Home = (props) => {
   return(
-    <>
-      <Template figureWidth="400px" figureSrc={home} figureAlt="home">
-        <Information title='Find a User' subtitle='Type a username' text='and find a profile' />
-        <Form />
-      </Template>   
-    </>
+    <Template figureWidth="400px" figureSrc={home} figureAlt="home">
+      <Information title='Find a User' subtitle='Type a username' text='and find a profile' />
+      <Form />
+    </Template>   
   );
 }
 

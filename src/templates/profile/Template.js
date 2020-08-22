@@ -5,13 +5,13 @@ import Content from '../../components/atoms/containers/content/Content';
 import Info from '../../components/molecules/infoUser/Info';
 import Repository from '../../components/molecules/infoUser/Repository';
 
-const Template = (props) => {
+const Template = ({ data }) => {
   return(
     <Container width='100vw' height='100vh' direction='column'>
       <Header />
       <Content margin="120px 0 0 0">
         <Container direction='column'>
-          <Info />
+          <Info data={data} />
           <Repository />
         </Container>
       </Content>

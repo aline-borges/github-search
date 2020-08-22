@@ -8,7 +8,9 @@ const Input = (props) => {
                 color={props.color} 
                 opacity={props.opacity} 
                 placeholder={props.placeholder}
-                placeholderTextColor={props.placeholderTextColor} />
+                placeholderTextColor={props.placeholderTextColor}
+                onChange={props.onChange}
+                error={props.error} />
   );
 }
 

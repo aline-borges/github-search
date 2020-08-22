@@ -11,7 +11,7 @@ export const InputStyle = styled.input`
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  border-color: ${props => props.borderColor};
+  border-color: ${props => props.error ? 'red' : props.borderColor};
   color: ${props => props.color};
 
   ::placeholder {

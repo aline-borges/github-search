@@ -1,15 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import Container from '../../atoms/containers/container/Container';
 import Input from '../../atoms/inputs/Input';
 import Button from '../../atoms/buttons/button/Button';
 
 const Form = () => {
-  return(
+  const [name, setName] = useState("");
+  const [error, setError] = useState(false);
+  const history = useHistory();
+
+  const getAPI = async () => {
+    const response = await fetch(`https://api.github.com/users/${name}`);
+    const data = await response.json();
+
+    if (data.name) {
+      history.push({
+        pathname: '/profile',
+        state: data,
+      });
+    } else {
+      setError(true);
+    }
+  };
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    getAPI();
+  };
+
+  return (
     <>
-      <form>
+      <form onSubmit={(e) => handleSubmit(e)}>
         <Container direction='column' justify='center'>
-          <Input type='text'  margin='15px 0 0 95px' borderColor='#8752CC' color='#8752CC' opacity='50%' placeholder='Enter a user name' 
-          placeholderTextColor='#8752CC' />
+          <Input value={name} type='text'  margin='15px 0 0 95px' borderColor='#8752CC' color='#8752CC' opacity='50%' placeholder='Enter a user name' hasError={error}
+          placeholderTextColor='#8752CC' onChange={(e) => setName(e.target.value)} />
           <Button type='submit' margin='35px 0 0 95px' bgColor='#201F1F' color="#F9F3F3" bgHover='#111111'>
             Search
             <svg width="10" height="12" viewBox="0 0 18 20" fill="#F9F3F3" xmlns="http://www.w3.org/2000/svg">
