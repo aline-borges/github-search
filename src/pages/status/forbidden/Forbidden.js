@@ -12,12 +12,12 @@ const Forbidden = () => {
   return(
     <Container width='100vw' height='100vh' direction='column'>
       <Header />
-      <Content margin="120px 0 0 0" justify='center' align='center'>
+      <Content margin="50px 0 0 0" justify='center' align='center'>
         <Main>
-          <Paragraph weight="800" size="32px" spacing="0.03em">You shall not pass!</Paragraph>
-          <Figure width='700px' src={forbidden} alt='forbidden' />
-          <Paragraph weight="500" size="24px" spacing="0.03em">You do not have access to this page or resource.</Paragraph>
-          <Paragraph weight="500" size="24px" spacing="0.03em">If you want to start over, <Link to="/"><span>go to the homepage.</span></Link></Paragraph>
+          <Paragraph weight="800" size="24px" spacing="0.03em">You shall not pass!</Paragraph>
+          <Figure width='500px' src={forbidden} alt='forbidden' />
+          <Paragraph weight="500" size="18px" spacing="0.03em">You do not have access to this page or resource.</Paragraph>
+          <Paragraph weight="500" size="18px" spacing="0.03em">If you want to start over, <Link to="/"><span>go to the homepage.</span></Link></Paragraph>
         </Main>
       </Content>
     </Container>

@@ -14,10 +14,10 @@ const TimeOut = () => {
       <Header />
       <Content margin="120px 0 0 0" justify='center' align='center'>
         <Main>
-          <Paragraph weight="800" size="32px" spacing="0.03em">This request takes too long to process.</Paragraph>
-          <Figure width='800px' src={timeout} alt='timeout' />
-          <Paragraph weight="500" size="24px" spacing="0.03em">Your browser didn’t send a complete request in time.</Paragraph>
-          <Paragraph weight="500" size="24px" spacing="0.03em">If you want to start over, <Link to="/"><span>go to the homepage.</span></Link></Paragraph>
+          <Paragraph weight="800" size="24px" spacing="0.03em">This request takes too long to process.</Paragraph>
+          <Figure width='500px' src={timeout} alt='timeout' />
+          <Paragraph weight="500" size="18px" spacing="0.03em">Your browser didn’t send a complete request in time.</Paragraph>
+          <Paragraph weight="500" size="18px" spacing="0.03em">If you want to start over, <Link to="/"><span>go to the homepage.</span></Link></Paragraph>
         </Main>
       </Content>
     </Container>

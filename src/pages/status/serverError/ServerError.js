@@ -14,10 +14,10 @@ const ServerError = () => {
       <Header />
       <Content margin="120px 0 0 0" justify='center' align='center'>
         <Main>
-          <Paragraph weight="800" size="32px" spacing="0.03em">Sorry, it’s me, not you..</Paragraph>
-          <Figure width='800px' src={serverError} alt='serverError' />
-          <Paragraph weight="500" size="24px" spacing="0.03em">Try reloading the page. We’re working hard to fix the page for you as soon as possible.</Paragraph>
-          <Paragraph weight="500" size="24px" spacing="0.03em">If you want to start over, <Link to="/"><span>go to the homepage.</span></Link></Paragraph>
+          <Paragraph weight="800" size="24px" spacing="0.03em">Sorry, it’s me, not you..</Paragraph>
+          <Figure width='500px' src={serverError} alt='serverError' />
+          <Paragraph weight="500" size="18px" spacing="0.03em">Try reloading the page. We’re working hard to fix the page for you as soon as possible.</Paragraph>
+          <Paragraph weight="500" size="18px" spacing="0.03em">If you want to start over, <Link to="/"><span>go to the homepage.</span></Link></Paragraph>
         </Main>
       </Content>
     </Container>

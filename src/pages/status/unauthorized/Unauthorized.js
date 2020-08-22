@@ -14,10 +14,10 @@ const Unauthorized = () => {
       <Header />
       <Content margin="120px 0 0 0" justify='center' align='center'>
         <Main>
-          <Paragraph weight="800" size="32px" spacing="0.03em">I’m gonna stop you right there!</Paragraph>
-          <Figure width='900px' src={unauthorized} alt='unauthorized' />
-          <Paragraph weight="500" size="24px" spacing="0.03em">Unauthorized: Acess to this resource is denied.</Paragraph>
-          <Paragraph weight="500" size="24px" spacing="0.03em">If you want to start over, <Link to="/"><span>go to the homepage.</span></Link></Paragraph>
+          <Paragraph weight="800" size="24px" spacing="0.03em">I’m gonna stop you right there!</Paragraph>
+          <Figure width='600px' src={unauthorized} alt='unauthorized' />
+          <Paragraph weight="500" size="18px" spacing="0.03em">Unauthorized: Acess to this resource is denied.</Paragraph>
+          <Paragraph weight="500" size="18px" spacing="0.03em">If you want to start over, <Link to="/"><span>go to the homepage.</span></Link></Paragraph>
         </Main>
       </Content>
     </Container>

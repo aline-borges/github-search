@@ -14,10 +14,10 @@ const Gateway = () => {
       <Header />
       <Content margin="120px 0 0 0" justify='center' align='center'>
         <Main>
-          <Paragraph weight="800" size="32px" spacing="0.03em">This page is taking way too long to load.</Paragraph>
-          <Figure width='900px' src={gateway} alt='gateway' />
-          <Paragraph weight="500" size="24px" spacing="0.03em">Sorry about that. Please try refreshing and contact us if the problem persists.</Paragraph>
-          <Paragraph weight="500" size="24px" spacing="0.03em">If you want to start over, <Link to="/"><span>go to the homepage.</span></Link></Paragraph>
+          <Paragraph weight="800" size="24px" spacing="0.03em">This page is taking way too long to load.</Paragraph>
+          <Figure width='500px' src={gateway} alt='gateway' />
+          <Paragraph weight="500" size="18px" spacing="0.03em">Sorry about that. Please try refreshing and contact us if the problem persists.</Paragraph>
+          <Paragraph weight="500" size="18px" spacing="0.03em">If you want to start over, <Link to="/"><span>go to the homepage.</span></Link></Paragraph>
         </Main>
       </Content>
     </Container>
