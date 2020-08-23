@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import Container from '../../atoms/containers/container/Container';
-import Input from '../../atoms/inputs/Input';
 import Button from '../../atoms/buttons/button/Button';
+
+import { StyledInput } from './style';
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -32,8 +33,11 @@ const Form = () => {
     <>
       <form onSubmit={(e) => handleSubmit(e)}>
         <Container direction='column' justify='center'>
-          <Input value={name} type='text'  margin='15px 0 0 95px' borderColor='#8752CC' color='#8752CC' opacity='50%' placeholder='Enter a user name' hasError={error}
-          placeholderTextColor='#8752CC' onChange={(e) => setName(e.target.value)} />
+          <StyledInput
+            value={name}
+            hasError={error}
+            onChange={(e) => setName(e.target.value)}
+          />
           <Button type='submit' margin='35px 0 0 95px' bgColor='#201F1F' color="#F9F3F3" bgHover='#111111'>
             Search
             <svg width="10" height="12" viewBox="0 0 18 20" fill="#F9F3F3" xmlns="http://www.w3.org/2000/svg">

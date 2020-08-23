@@ -6,13 +6,16 @@ import Info from '../../components/molecules/infoUser/Info';
 import Repository from '../../components/molecules/infoUser/Repository';
 
 const Template = ({ data }) => {
+  const getRepositories = async () => {
+  };
+  
   return(
     <Container width='100vw' height='100vh' direction='column'>
       <Header />
       <Content margin="120px 0 0 0">
-        <Container direction='column'>
+      <Container direction='column'>
           <Info data={data} />
-          <Repository />
+          <Repository login={data.login} />
         </Container>
       </Content>
     </Container>
