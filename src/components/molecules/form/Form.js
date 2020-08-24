@@ -2,42 +2,78 @@ import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import Container from '../../atoms/containers/container/Container';
 import Button from '../../atoms/buttons/button/Button';
-
-import { StyledInput } from './style';
+import { StyledInput, Message, Icon, InputContainer } from './style';
+import errorIcon from '../../../assets/icons/error.svg';
+import warningIcon from '../../../assets/icons/warning.svg';
+import successIcon from '../../../assets/icons/sucess.svg';
 
 const Form = () => {
   const [name, setName] = useState("");
   const [error, setError] = useState(false);
+  const [warning, setWarning] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [message, setMessage] = useState("");
+  const [icon, setIcon] = useState("");
   const history = useHistory();
 
   const getAPI = async () => {
-    const response = await fetch(`https://api.github.com/users/${name}`);
+    const response = await fetch(`https://api.github.com/users/${name}`, {
+      headers: {
+        'Authorization': '25c3cc9b70a07b5f481ed63785bdcebde8fab7af',
+    }
+    })
     const data = await response.json();
 
     if (data.name) {
-      history.push({
-        pathname: '/profile',
-        state: data,
-      });
-    } else {
+      setSuccess(true);
+      setIcon(successIcon);
+      setMessage("");
+      setTimeout(() => {
+        history.push({
+          pathname: '/profile',
+          state: data,
+        });
+      }, 600);
+    } 
+    else {
       setError(true);
+      setIcon(errorIcon);
+      setMessage("User not found. Please, try again.");
     }
   };
 
   const handleSubmit = e => {
     e.preventDefault();
+    if(name === ""){
+      setWarning(true);
+      setIcon(warningIcon);
+      setMessage("Nothing was typed. Please try again.");
+      return;
+    }
+    setWarning(false)
     getAPI();
   };
 
   return (
     <>
       <form onSubmit={(e) => handleSubmit(e)}>
-        <Container direction='column' justify='center'>
-          <StyledInput
-            value={name}
-            hasError={error}
-            onChange={(e) => setName(e.target.value)}
-          />
+        <Container direction='column' justify='center' align='center'>
+          <InputContainer>
+            <StyledInput
+              value={name}
+              error={error}
+              warning={warning}
+              success={success}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <Icon src={icon}/>
+          </InputContainer>
+          <Message 
+            error={error}
+            warning={warning}
+            success={success}>
+              {message}
+          </Message>
           <Button type='submit' margin='35px 0 0 95px' bgColor='#201F1F' color="#F9F3F3" bgHover='#111111'>
             Search
             <svg width="10" height="12" viewBox="0 0 18 20" fill="#F9F3F3" xmlns="http://www.w3.org/2000/svg">
