@@ -16,6 +16,7 @@ export const Style = styled.button`
   line-height: ${props => props.lineHeight || '21px'};
   text-transform: uppercase;
   cursor: pointer;
+  outline: none;
 
     &:hover {
       background-color: ${props => props.bgHover};
