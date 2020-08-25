@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Container from '../../atoms/containers/container/Container';
 import Paragraph from '../../atoms/texts/Paragraph';
 
-const Repository = () => {
+const Repository = ({ repo }) => {
+  const { name, size } = repo;
+
   return(
     <Container direction='column' justify='left' align='left' margin='50px 0 0 0' padding='15px'>
       <Container direction='row'>
@@ -18,12 +20,12 @@ const Repository = () => {
                   </linearGradient>
                   </defs>
                 </svg>
-                <Paragraph size='36px'>15</Paragraph>
+                <Paragraph size='36px'>{size}</Paragraph>
               </Container>
             </Container>
 
           <Container bgColor='#2C2C2D' direction='column' margin='0 0 0 -34px' padding='25px 70px' radius='0 12px 12px 0'>
-              <Paragraph size='24px' spacing='1px' margin='0 0 5px 0'>Last Repository</Paragraph>
+            <Paragraph size='24px' spacing='1px' margin='0 0 5px 0'>{name}</Paragraph>
               <Container direction='row' justify='flex-end'>
                 <svg id='circle' width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="7.01264" cy="7.35444" r="6.51899" fill="#F1E05A"/>

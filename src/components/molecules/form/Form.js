@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { StyledInput, Message, Icon, InputContainer } from './style';
 import Container from '../../atoms/containers/container/Container';
 import Button from '../../atoms/buttons/button/Button';
-import { StyledInput, Message, Icon, InputContainer } from './style';
 import errorIcon from '../../../assets/icons/error.svg';
 import warningIcon from '../../../assets/icons/warning.svg';
 import successIcon from '../../../assets/icons/sucess.svg';
@@ -47,7 +47,7 @@ const Form = () => {
     if(name === ""){
       setWarning(true);
       setIcon(warningIcon);
-      setMessage("Nothing was typed. Please try again.");
+      setMessage("Nothing was typed. Please, try again.");
       return;
     }
     setWarning(false)
