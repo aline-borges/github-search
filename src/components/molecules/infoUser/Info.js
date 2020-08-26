@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Container from '../../atoms/containers/container/Container';
 import Photo from '../../atoms/images/Photo';
 import Username from '../../atoms/texts/Username';
@@ -48,7 +49,9 @@ const Info = ({ data }) => {
                 </linearGradient>
                 </defs>
               </svg>
-            <Paragraph weight='500' size='14px' spacing='1px' margin='0 10px 0 5px'>{following}</Paragraph>
+            <Paragraph weight='500' size='14px' spacing='1px' margin='0 10px 0 5px'>
+              <Link to={ {pathname: "/profile/following"} }>{following}</Link>
+            </Paragraph>
           </Container>
 
           <Container direction='row'>
@@ -60,7 +63,9 @@ const Info = ({ data }) => {
               </linearGradient>
               </defs>
             </svg>
-            <Paragraph weight='500' size='14px' spacing='1px' margin='0 10px 0 5px'>{followers}</Paragraph>
+            <Paragraph weight='500' size='14px' spacing='1px' margin='0 10px 0 5px'>
+              <Link to={ {pathname: "/profile/followers"} }>{followers}</Link>
+            </Paragraph>
           </Container>
         </Container>
       </Container>

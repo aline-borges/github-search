@@ -10,19 +10,52 @@ const Template = ({ data }) => {
   const [repository, setRepository] = useState(null);
 
   const getRepos = async () => {
-    const response = await fetch(`https://api.github.com/users/${login}/repos`, {
+    const responseRepository = await fetch(`https://api.github.com/users/${login}/repos`, {
       headers: {
         'Authorization': '25c3cc9b70a07b5f481ed63785bdcebde8fab7af',
       }
     })
 
-    const repos = await response.json();
-    const repoName = repos[0].name;
-    const repoSize = repos.length;
+    const responseStarred = await fetch(`https://api.github.com/users/${login}/starred`, {
+      headers: {
+        'Authorization': '25c3cc9b70a07b5f481ed63785bdcebde8fab7af',
+      }
+    })
+
+    const repos = await responseRepository.json(), 
+          starred = await responseStarred.json();
+
+    const datesRepos = repos.map(repo => [repo.created_at, repo.name, repo.html_url]), 
+          datesStarred = starred.map(repo => [repo.updated_at, repo.name, repo.stargazers_count, repo.html_url]);
+
+    const sortRepos = datesRepos.sort(), 
+          sortStarred = datesStarred.sort();
+
+    const lastRepos = sortRepos.pop(), 
+          lastStarred = sortStarred.pop();
+
+    const nameRepos = lastRepos[1], 
+          repoLink = lastRepos[2],
+          nameStarred = lastStarred[1],
+          starredNumbers = lastStarred[2],
+          starLink = lastStarred[3];
+
+    const repoName = nameRepos, 
+          starName = nameStarred;
+
+    const repoSize = repos.length, 
+          starSize = starred.length;
+
+    const starNumbers = starredNumbers.toLocaleString('pt-BR');
 
     setRepository({
-      size: repoSize, 
-      name: repoName
+      repoSize: repoSize, 
+      repoName: repoName,
+      repoLink: repoLink,
+      starName: starName,
+      starSize: starSize,
+      starNumbers: starNumbers,
+      starLink: starLink
     });
   }
 
@@ -37,7 +70,7 @@ const Template = ({ data }) => {
       <Container direction='column'>
           <Info data={data} />
           {repository &&
-            <Repository repo={repository} />
+            <Repository repo={repository}  />
           }
         </Container>
       </Content>

@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Container from '../../atoms/containers/container/Container';
 import Paragraph from '../../atoms/texts/Paragraph';
 
 const Repository = ({ repo }) => {
-  const { name, size } = repo;
-
+  const { repoName, repoSize, starName, starSize, starNumbers, repoLink, starLink } = repo;
+ 
   return(
     <Container direction='column' justify='left' align='left' margin='50px 0 0 0' padding='15px'>
       <Container direction='row'>
@@ -20,12 +21,16 @@ const Repository = ({ repo }) => {
                   </linearGradient>
                   </defs>
                 </svg>
-                <Paragraph size='36px'>{size}</Paragraph>
+                <Paragraph size='36px'>
+                  <Link to={ {pathname: "/profile/repositories"} }>{repoSize}</Link>
+                </Paragraph>
               </Container>
             </Container>
 
           <Container bgColor='#2C2C2D' direction='column' margin='0 0 0 -34px' padding='25px 70px' radius='0 12px 12px 0'>
-            <Paragraph size='24px' spacing='1px' margin='0 0 5px 0'>{name}</Paragraph>
+            <Paragraph size='24px' spacing='1px' margin='0 0 5px 0'>
+              <Link to={ {pathname: `${repoLink}` }}>{repoName}</Link>
+            </Paragraph>
               <Container direction='row' justify='flex-end'>
                 <svg id='circle' width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="7.01264" cy="7.35444" r="6.51899" fill="#F1E05A"/>
@@ -47,12 +52,16 @@ const Repository = ({ repo }) => {
                   </linearGradient>
                   </defs>
                 </svg>
-                <Paragraph size='36px'>15</Paragraph>
+                <Paragraph size='36px'>
+                  <Link to={ {pathname: "/profile/stars"} }>{starSize}</Link>
+                </Paragraph>
               </Container>
             </Container>
 
           <Container bgColor='#2C2C2D' direction='column' margin='0 0 0 -40px' padding='25px 70px' radius='0 12px 12px 0'>
-              <Paragraph size='24px' spacing='1px' margin='0 0 5px 0'>Last Repository</Paragraph>
+              <Paragraph size='24px' spacing='1px' margin='0 0 5px 0'>
+                <Link to={ {pathname: `${starLink}` }}>{starName}</Link>
+              </Paragraph>
               <Container direction='row' justify='flex-end'>
                 <svg id='starGrey' width="16" height="16" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9.81981 0.783627L7.13459 6.60825L1.12675 7.5453C0.0493653 7.71247 -0.38241 9.13343 0.398897 9.9473L4.74543 14.4785L3.7174 20.8795C3.53235 22.0365 4.67141 22.9031 5.62543 22.362L11 19.3397L16.3746 22.362C17.3286 22.8987 18.4677 22.0365 18.2826 20.8795L17.2546 14.4785L21.6011 9.9473C22.3824 9.13343 21.9506 7.71247 20.8733 7.5453L14.8654 6.60825L12.1802 0.783627C11.6991 -0.2546 10.305 -0.267797 9.81981 0.783627Z" fill="#504D4D" />
@@ -62,7 +71,7 @@ const Repository = ({ repo }) => {
                   </linearGradient>
                   </defs>
                 </svg>
-                <Paragraph>134</Paragraph>
+                <Paragraph>{starNumbers}</Paragraph>
               </Container>
             </Container>
           </Container>
