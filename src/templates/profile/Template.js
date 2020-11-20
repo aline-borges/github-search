@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Header from '../../components/organisms/header/Header';
 import Container from '../../components/atoms/containers/container/Container';
 import Content from '../../components/atoms/containers/content/Content';
@@ -9,7 +9,7 @@ const Template = ({ data }) => {
   const { login } = data;
   const [repository, setRepository] = useState(null);
 
-  const getRepos = async () => {
+  const getRepos = useCallback(async () => {
     const responseRepository = await fetch(`https://api.github.com/users/${login}/repos`, {
       headers: {
         'Authorization': '25c3cc9b70a07b5f481ed63785bdcebde8fab7af',
@@ -57,11 +57,11 @@ const Template = ({ data }) => {
       starNumbers: starNumbers,
       starLink: starLink
     });
-  }
+  }, [login]);
 
   useEffect(() => {
     getRepos();
-  },[]);
+  },[getRepos]);
 
   return(
     <Container width='100vw' height='100vh' direction='column'>
