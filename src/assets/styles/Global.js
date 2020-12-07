@@ -8,6 +8,10 @@ export const Global = createGlobalStyle`
     padding: 0;
   }
 
+  html {
+    font-size: 62.5%;
+  }
+
   body {
     background: #232324;
     font-family: 'Open Sans', sans-serif;
@@ -25,39 +29,39 @@ export const Global = createGlobalStyle`
   }
 
   button svg {
-    margin-left: 15px;
+    margin-left: 1.5rem;
   }
 
   .smallIcon {
-    margin-top: 1px;
+    margin-top: 0.1rem;
   }
 
   .repository {
-    margin: 13px 4px 0 0;
+    margin: 1.3rem 0.4rem 0 0;
   }
 
   #circle {
-    margin: 3px 8px 0 0;
+    margin: 0.3rem 0.8rem 0 0;
   }
 
   #starGrey {
-    margin: 2px 5px 0 0;
+    margin: 0.2rem 0.5rem 0 0;
   }
 
   #place {
-    margin-left: -3px;
+    margin-left: -0.3rem;
   }
 
   #homeIcon {
-    padding-top: 5px;
+    padding-top: 0.5rem;
   }
 
   .largeIcon {
-    margin: auto auto 15px auto;
+    margin: auto auto 1.5rem auto;
   }
 
   #list {
-    margin-top: 15px;
+    margin-top: 1.5rem;
   }
 
   span {
