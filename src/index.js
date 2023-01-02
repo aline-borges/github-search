@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import Routes from './routes';
+import AppRoute from './routes';
 import Global from './assets/styles/Global';
 
 ReactDOM.render(
   <BrowserRouter>
     <Global />
-    <Routes />
+    <AppRoute />
   </BrowserRouter>,
   document.getElementById('root')
 );
