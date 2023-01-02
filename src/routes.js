@@ -19,21 +19,21 @@ import Gateway from './pages/status/gateway/Gateway';
 const AppRoute = () => {
   return(
     <Routes>
-      <Route path="/" component={Home} exact />
-      <Route path="/profile" component={Profile} exact />
-      <Route path="/profile/repositories" component={Repositories} />
-      <Route path="/profile/stars" component={Stars} />
-      <Route path="/profile/following" component={Following} />
-      <Route path="/profile/followers" component={Followers} />
-      <Route path="/400" component={BadRequest} />
-      <Route path="/401" component={Unauthorized} />
-      <Route path="/403" component={Forbidden} />
-      <Route path="/404" component={NotFound} />
-      <Route path="/408" component={TimeOut} />
-      <Route path="/410" component={Gone} />
-      <Route path="/500" component={ServerError} />
-      <Route path="/503" component={Unavailable} />
-      <Route path="/504" component={Gateway} />
+      <Route path="/" element={<Home />} exact />
+      <Route path="/profile" element={<Profile />} exact />
+      <Route path="/profile/repositories" element={<Repositories />} />
+      <Route path="/profile/stars" element={<Stars />} />
+      <Route path="/profile/following" element={<Following />} />
+      <Route path="/profile/followers" element={<Followers />} />
+      <Route path="/400" element={<BadRequest />} />
+      <Route path="/401" element={<Unauthorized />} />
+      <Route path="/403" element={<Forbidden />} />
+      <Route path="/404" element={<NotFound />} />
+      <Route path="/408" element={<TimeOut />} />
+      <Route path="/410" element={<Gone />} />
+      <Route path="/500" element={<ServerError />} />
+      <Route path="/503" element={<Unavailable />} />
+      <Route path="/504" element={<Gateway />} />
     </Routes>
   );
 }
