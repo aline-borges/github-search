@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { StyledInput, Message, Icon, InputContainer } from './style';
 import Container from '../../atoms/containers/container/Container';
 import Button from '../../atoms/buttons/button/Button';
@@ -14,7 +14,7 @@ const Form = () => {
   const [success, setSuccess] = useState(false);
   const [message, setMessage] = useState("");
   const [icon, setIcon] = useState("");
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const getAPI = async () => {
     const response = await fetch(`https://api.github.com/users/${name}`, {
@@ -29,7 +29,7 @@ const Form = () => {
       setIcon(successIcon);
       setMessage("");
       setTimeout(() => {
-        history.push({
+        navigate.push({
           pathname: '/profile',
           state: data,
         });
