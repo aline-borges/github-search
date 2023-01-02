@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
 import Profile from './pages/profile/Profile';
 import Repositories from './pages/repositories/Repositories';
@@ -16,9 +16,9 @@ import Unauthorized from './pages/status/unauthorized/Unauthorized';
 import Unavailable from './pages/status/unavailable/Unavailable';
 import Gateway from './pages/status/gateway/Gateway';
 
-const Routes = () => {
+const AppRoute = () => {
   return(
-    <Switch>
+    <Routes>
       <Route path="/" component={Home} exact />
       <Route path="/profile" component={Profile} exact />
       <Route path="/profile/repositories" component={Repositories} />
@@ -34,8 +34,8 @@ const Routes = () => {
       <Route path="/500" component={ServerError} />
       <Route path="/503" component={Unavailable} />
       <Route path="/504" component={Gateway} />
-    </Switch>
+    </Routes>
   );
 }
 
-export default Routes 
+export default AppRoute 
