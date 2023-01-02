@@ -49,6 +49,12 @@
     ]
   },
   "devDependencies": {
+    "cz-conventional-changelog": "3.3.0",
     "yarn-upgrade-all": "^0.7.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
